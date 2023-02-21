@@ -1,0 +1,55 @@
+console.log("hello world");
+// print all even nos in first 50 natural numbers
+
+for (let i = 1; i <= 50; i++) {
+  if (i % 2 == 0) {
+    console.log(i);
+  }
+}
+
+//print all odd numbers in natural numbers from 20 to 50
+for (let j = 20; j < 50; j++) {
+  if (j % 2) {
+    console.log(j);
+  }
+}
+
+// print all numbers that are divisible by 5
+//          [12, 45, 67, 89, 90, 34, 35, 55]
+
+let array = [12, 45, 67, 89, 90, 34, 35, 55];
+for (k = 0; (k = array.length); k++) {
+  if (Number.isInteger(k / 5)) {
+    console.log(array[k]);
+  }
+}
+
+// Print all numbers of this array
+// [[1,2], [3,4], [5,6], [7,8]]
+
+let numbers = [
+  [1, 2],
+  [3, 4],
+  [5, 6],
+  [7, 8],
+];
+
+for (let l = 0; l <= 2; l++) {
+  for (let m = 0; m < numbers[l].length; m++) {
+    console.log(numbers[l][m]);
+  }
+}
+
+// Print all prime numbers occurring in 1st 50 natural nos.
+
+for (let num = 0; num <= 50; num++) {
+  let notPrime = false;
+  for (let i = 2; (i = num / 2); i++) {
+    if (num % i === 0 && i !== num) {
+      notPrime = true;
+    }
+  }
+  if (notPrime === false) {
+    console.log(num);
+  }
+}
